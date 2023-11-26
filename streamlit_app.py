@@ -3,6 +3,7 @@ import snowflake.connector
 import pandas
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
 
+'''
 # connect to snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
@@ -37,3 +38,5 @@ caption= product_caption
 )
 streamlit.write('Price: ', df2[1])
 streamlit.write('Sizes Av
+
+'''
